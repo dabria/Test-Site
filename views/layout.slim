@@ -6,10 +6,13 @@ head
   meta(content="True" name="HandheldFriendly")
   meta(name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1.0, user-scalable=no, target-densityDpi=device-dpi")
   link(rel="stylesheet" href="/stylesheets/main.css")
+  link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css")
+  script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js")
 body
-  ul
-  li Websites
-  li About
-  li Resources
+  .col-sm-12.nav
+    ul
+      li Websites
+      li About
+      li Resources
 
   == yield
