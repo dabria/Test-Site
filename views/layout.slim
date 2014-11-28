@@ -9,11 +9,16 @@ head
   link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css")
   script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js")
 body
+  video(autoplay loop poster="images/test.jpg" id="bgvid")
+    source(src="images/test.mp4" type="video/mp4")
   .col-sm-12
     .nav
       ul
-        li Websites
-        li About
-        li Resources
+        li
+          a(href="#") Websites
+        li
+          a(href="#") About
+        li
+          a(href="#") Resources
 
   == yield
