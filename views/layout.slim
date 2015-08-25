@@ -7,10 +7,13 @@ head
   meta(name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1.0, user-scalable=no, target-densityDpi=device-dpi")
   link(rel="stylesheet" href="/stylesheets/main.css")
   link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css")
-  script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js")
+  link(rel="stylesheet" href='https://fonts.googleapis.com/css?family=Share+Tech+Mono:400,700|Fjalla+One|Shadows+Into+Light+Two' type='text/css')
 body
   video(autoplay loop poster="images/test.jpg" id="bgvid")
     source(src="images/test.mp4" type="video/mp4")
+    source(src="images/test.webm" type="video/webm")
+
+  == yield
   .col-sm-12
     .nav
       ul
@@ -21,4 +24,4 @@ body
         li
           a(href="#") Resources
 
-  == yield
+  script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js")
